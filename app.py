@@ -9,7 +9,7 @@ openai.api_key = st.secrets['openai_key']
 
 st.set_page_config(page_title="PiCCO Bot", page_icon=":books:")
 st.title('KSA-CCSK Advanced Hemodynamic Monitoring Bot :books:')
-st.info("Welcome to the 2024 KSA-CCSK Advanced Hemodynamic Monitoring Workshop [click to register](https://conference.anaesthesiakenya.co.ke)")
+st.info("Welcome to the 2024 KSA-CCSK Advanced Hemodynamic Monitoring Workshop! [click to register](https://conference.anaesthesiakenya.co.ke)")
 
 if "messages" not in st.session_state.keys(): # initialize the chat messages history
     st.session_state.messages = [
