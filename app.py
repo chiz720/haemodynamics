@@ -47,7 +47,7 @@ if "messages" not in st.session_state: # initialize the message history
     st.session_state.messages = []
 
 if prompt := st.chat_input("Ask a question"):  # prompt for user input and save to chat history
-    st.session_state.messages.append({"role":"user", "content":"prompt"})
+    st.session_state.messages.append({"role":"user", "content":prompt})
 
 for message in st.session_state.messages: # write history to UI
     with st.chat_message(message["role"]):
