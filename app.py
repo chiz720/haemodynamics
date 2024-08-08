@@ -5,7 +5,7 @@ from llama_index.core import VectorStoreIndex, SimpleDirectoryReader,Settings
 
 # Load environment variables 
 
-openai.api_key = st.secrets['openai_key']
+openai.api_key = st.secrets.openai_key
 
 st.set_page_config(page_title="PiCCO Bot", page_icon=":books:")
 st.title('KSA-CCSK Advanced Hemodynamic Monitoring Bot :books:')
