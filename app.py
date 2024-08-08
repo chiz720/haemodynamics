@@ -43,8 +43,6 @@ if "chat_engine" not in st.session_state.keys(): # Initilize chat engine
         chat_mode="condense_question", verbose=True,streaming=True
     )
 
-if "messages" not in st.session_state: # initialize the message history
-    st.session_state.messages = []
 
 if prompt := st.chat_input("Ask a question"):  # prompt for user input and save to chat history
     st.session_state.messages.append({"role":"user", "content":prompt})
