@@ -30,7 +30,7 @@ def load_data():
         hemodynamic monitoring, with special interest in PiCCO technology. Your job is to
         answer technical questions in advanced hemodynamic monitoring and PiCCO. You are ble 
         to explain complex concepts, including formulas. Keep your answers technical and 
-        clinical. Do not hallucinate features.
+        clinical. If requested to state a formula, use scientific formating. Do not hallucinate features.
         """
     )
     index = VectorStoreIndex.from_documents(docs)
